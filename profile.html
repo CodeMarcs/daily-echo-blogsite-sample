@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Echo | Profile</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .profile-banner {
+    height: 140px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--green-700), var(--green-500));
+    margin-bottom: -40px;
+  }
+  .profile-head {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+  .profile-head .avatar {
+    width: 84px;
+    height: 84px;
+    font-size: 1.6rem;
+    border: 4px solid var(--bg);
+  }
+  .profile-head .names h2 { margin: 0; font-size: 1.3rem; }
+  .profile-head .names .handle { color: var(--text-muted); font-size: 0.9rem; }
+  .profile-stats {
+    display: flex;
+    gap: 24px;
+    padding: 0 4px 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+  .profile-stats .stat strong { font-size: 1.1rem; display: block; }
+  .profile-stats .stat span { font-size: 0.82rem; color: var(--text-muted); }
+  .profile-bio { padding: 0 4px 16px; color: var(--text-muted); font-size: 0.92rem; }
+</style>
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+
+<div class="app-shell">
+    <aside class="side-nav">
+        <div class="brand"><i class="fa-brands fa-leanpub"></i>Daily Echo</div>
+        <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+        <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Bookmarks</a></li>
+      <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+        <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+        <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> Profile</a></li>
+        </ul>
+        <div class="nav-footer">
+        <button class="theme-toggle"><i class="fa-solid fa-moon"></i> <span>Dark mode</span></button>
+        <a href="login.html" style="text-decoration:none;">
+            <div class="user-chip">
+            <div class="avatar"><i class="fa-solid fa-right-from-bracket"></i></div>
+            <div class="info">
+                <div class="name">Log out</div>
+                <div class="handle">@kisha</div>
+            </div>
+            </div>
+        </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+        <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="top-bar-actions">
+            <button class="icon-btn theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+        </div>
+        </header>
+
+        <div class="container">
+
+        <div class="profile-banner"></div>
+        <div class="profile-head">
+            <div class="avatar">Ki</div>
+            <div class="names">
+            <h2>Kisha</h2>
+            <div class="handle">@kisha</div>
+            </div>
+        </div>
+
+        <p class="profile-bio">Writer and weekend photographer. I post about travel, food, and slow living. Based in Calamba, PH.</p>
+
+        <div class="profile-stats">
+            <div class="stat"><strong>2</strong><span>Posts</span></div>
+            <div class="stat"><strong>1.3k</strong><span>Followers</span></div>
+            <div class="stat"><strong>3</strong><span>Following</span></div>
+        </div>
+
+        <section class="feed">
+            <article class="post-card">
+            <div class="post-header">
+                <div class="avatar">Ki</div>
+                <div class="info">
+                <div class="name">Kisha</div>
+                <div class="meta">@kisha · 3h ago</div>
+                </div>
+                <span class="post-tag">Life</span>
+            </div>
+            <div class="post-body">
+                <p>Reorganized my whole workspace today. There's something so satisfying about a clean desk and a fresh cup of coffee.</p>
+            </div>
+            <div class="post-actions">
+                <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">17</span></button>
+                <button class="action-btn"><i class="fa-regular fa-comment"></i><span>2</span></button>
+                <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+                <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+            </article>
+        </section>
+        </div>
+    </main>
+</div>
+
+<nav class="bottom-nav">
+    <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+        <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Saved</a></li>
+    <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+        <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Alerts</a></li>
+        <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> Profile</a></li>
+    </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

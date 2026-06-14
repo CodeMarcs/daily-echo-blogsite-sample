@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Echo | Bookmarks</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+
+<div class="app-shell">
+  <aside class="side-nav">
+    <div class="brand"><i class="fa-brands fa-leanpub"></i> Daily Echo</div>
+    
+    <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+        <li><a href="bookmarks.html" class="active"><i class="fa-solid fa-bookmark"></i> Bookmarks</a></li>
+        <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+        <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+        <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+    </ul>
+    
+    <div class="nav-footer">
+      <button class="theme-toggle"><i class="fa-solid fa-moon"></i> <span>Dark mode</span></button>
+      <a href="profile.html" style="text-decoration:none;">
+        <div class="user-chip">
+            <div class="avatar">Ki</div>
+                <div class="info">
+                <div class="name">Kisha</div>
+                <div class="handle">@kisha</div>
+            </div>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search your bookmarks...">
+      </div>
+      <div class="top-bar-actions">
+        <button class="icon-btn theme-toggle"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Bookmarks</h1>
+        <p>Posts you've saved for later</p>
+      </div>
+
+      <section class="feed">
+        <article class="post-card">
+          <div class="post-header">
+            <div class="avatar">Me</div>
+            <div class="info">
+              <div class="name">Mer</div>
+              <div class="meta">@mer · Saved 2d ago</div>
+            </div>
+            <span class="post-tag">Travel</span>
+          </div>
+          <div class="post-body">
+            <p>Spent the whole afternoon chasing the sunset along the coast. The sky turned every shade of purple before fading into night.</p>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">24</span></button>
+            <button class="action-btn"><i class="fa-regular fa-comment"></i><span>5</span></button>
+            <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+            <button class="action-btn liked"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-header">
+            <div class="avatar">Ai</div>
+            <div class="info">
+              <div class="name">Aiz</div>
+              <div class="meta">@aiz · Saved 5d ago</div>
+            </div>
+            <span class="post-tag">Code</span>
+          </div>
+          <div class="post-body">
+            <p>Finally refactored my CSS into design tokens. Switching themes is now a one-line change.</p>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">12</span></button>
+            <button class="action-btn"><i class="fa-regular fa-comment"></i><span>3</span></button>
+            <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+            <button class="action-btn liked"><i class="fa-solid fa-bookmark"></i></button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+</div>
+
+<nav class="bottom-nav">
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+    <li><a href="bookmarks.html" class="active"><i class="fa-solid fa-bookmark"></i> Saved</a></li>
+    <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+    <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Alerts</a></li>
+    <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

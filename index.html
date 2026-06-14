@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Echo | Home</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+
+<div class="app-shell">
+
+  <!-- Side Navigation -->
+  <aside class="side-nav">
+    <div class="brand"><i class="fa-brands fa-leanpub"></i> Daily Echo</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+      <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Bookmarks</a></li>
+      <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+      <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+      <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+    </ul>
+
+    <div class="nav-footer">
+      <button class="theme-toggle"><i class="fa-solid fa-moon"></i> <span>Dark mode</span></button>
+      <a href="profile.html" style="text-decoration:none;">
+        <div class="user-chip">
+          <div class="avatar">Ki</div>
+          <div class="info">
+            <div class="name">Kisha</div>
+            <div class="handle">@kisha</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <header class="top-bar">
+      <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search posts, people, tags...">
+      </div>
+      <div class="top-bar-actions">
+        <button class="icon-btn theme-toggle"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Home</h1>
+        <p>Latest stories from people you follow</p>
+      </div>
+
+      <!-- Composer -->
+      <div class="composer">
+        <div class="avatar">Ki</div>
+        <textarea placeholder="Share something with the community..." rows="2"></textarea>
+        <div class="composer-actions">
+          <button class="icon-btn" title="Add image"><i class="fa-regular fa-image"></i></button>
+          <button class="btn">Post</button>
+        </div>
+      </div>
+
+      <!-- Feed -->
+      <section class="feed">
+
+        <article class="post-card">
+          <div class="post-header">
+            <div class="avatar">Me</div>
+            <div class="info">
+              <div class="name">Mer</div>
+              <div class="meta">@mer · 2h ago</div>
+            </div>
+            <span class="post-tag">Travel</span>
+          </div>
+          <div class="post-body">
+            <p>Spent the whole afternoon chasing the sunset along the coast. The sky turned every shade of purple before fading into night — pure magic.</p>
+          </div>
+          <div class="post-image">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Purple sunset over the ocean">
+          </div>
+          <div class="post-actions">
+            <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">24</span></button>
+            <button class="action-btn"><i class="fa-regular fa-comment"></i><span>5</span></button>
+            <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+            <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-header">
+            <div class="avatar">Ai</div>
+            <div class="info">
+              <div class="name">Aiz</div>
+              <div class="meta">@aiz · 5h ago</div>
+            </div>
+            <span class="post-tag">Code</span>
+          </div>
+          <div class="post-body">
+            <p>Finally refactored my CSS into design tokens. Switching themes is now a one-line change. Small wins, big relief for future me.</p>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">12</span></button>
+            <button class="action-btn"><i class="fa-regular fa-comment"></i><span>3</span></button>
+            <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+            <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-header">
+            <div class="avatar">Ja</div>
+            <div class="info">
+              <div class="name">Janners</div>
+              <div class="meta">@janners · 1d ago</div>
+            </div>
+            <span class="post-tag">Food</span>
+          </div>
+          <div class="post-body">
+            <p>Tried making ube cheese pandesal at home for the first time. It came out soft, sweet, and slightly purple — exactly the comfort food I needed.</p>
+          </div>
+          <div class="post-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop" alt="Freshly baked bread rolls">
+          </div>
+          <div class="post-actions">
+            <button class="action-btn like"><i class="fa-regular fa-heart"></i><span class="count">41</span></button>
+            <button class="action-btn"><i class="fa-regular fa-comment"></i><span>9</span></button>
+            <button class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></button>
+            <button class="action-btn"><i class="fa-regular fa-bookmark"></i></button>
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<!-- Sticky bottom nav (small devices) -->
+<nav class="bottom-nav">
+  <ul>
+    <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+    <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Saved</a></li>
+    <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+    <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Alerts</a></li>
+    <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

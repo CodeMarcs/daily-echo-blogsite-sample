@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Echo | Notifications</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .notif-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  .notif-item .icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--green-100);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  [data-theme="dark"] .notif-item .icon {
+    background-color: var(--green-900);
+    color: var(--green-400);
+  }
+  .notif-item .content p { margin: 0; font-size: 0.92rem; }
+  .notif-item .content .time { font-size: 0.78rem; color: var(--text-muted); }
+  .notif-item.unread { border-color: var(--accent-light); }
+</style>
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+
+<div class="app-shell">
+  <aside class="side-nav">
+    <div class="brand"><i class="fa-brands fa-leanpub"></i>Daily Echo</div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+      <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Bookmarks</a></li>
+      <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+      <li><a href="notifications.html" class="active"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+      <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+    </ul>
+    <div class="nav-footer">
+      <button class="theme-toggle"><i class="fa-solid fa-moon"></i> <span>Dark mode</span></button>
+      <a href="profile.html" style="text-decoration:none;">
+        <div class="user-chip">
+          <div class="avatar">Ki</div>
+          <div class="info">
+            <div class="name">Kisha</div>
+            <div class="handle">@kisha</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="top-bar">
+      <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search notifications...">
+      </div>
+      <div class="top-bar-actions">
+        <button class="icon-btn theme-toggle"><i class="fa-solid fa-moon"></i></button>
+        <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Notifications</h1>
+        <p>Stay up to date with your community</p>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="content">
+          <p><strong>Mer</strong> liked your post "Refactoring CSS into design tokens".</p>
+          <div class="time">10 minutes ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
+        <div class="content">
+          <p><strong>Janners</strong> started following you.</p>
+          <div class="time">1 hour ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="icon"><i class="fa-solid fa-comment"></i></div>
+        <div class="content">
+          <p><strong>Aiz</strong> commented: "This is such a good idea, trying it this weekend!"</p>
+          <div class="time">Yesterday</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="icon"><i class="fa-solid fa-bookmark"></i></div>
+        <div class="content">
+          <p><strong>Kisha</strong> saved your post to their bookmarks.</p>
+          <div class="time">2 days ago</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<nav class="bottom-nav">
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+    <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Saved</a></li>
+    <li><a href="messages.html"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+    <li><a href="notifications.html" class="active"><i class="fa-solid fa-bell"></i> Alerts</a></li>
+    <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

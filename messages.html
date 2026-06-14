@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Echo | Messages</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+
+<div class="app-shell">
+  <aside class="side-nav">
+    <div class="brand"><i class="fa-brands fa-leanpub"></i> Daily Echo</div>
+    <ul class="nav-links">
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+      <li><a href="bookmarks.html"><i class="fa-regular fa-bookmark"></i> Bookmarks</a></li>
+      <li><a href="messages.html" class="active"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+      <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+      <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+    </ul>
+    <div class="nav-footer">
+      <button class="theme-toggle"><i class="fa-solid fa-moon"></i> <span>Dark mode</span></button>
+      <a href="profile.html" style="text-decoration:none;">
+        <div class="user-chip">
+          <div class="avatar">Ki</div>
+          <div class="info">
+            <div class="name">Kisha</div>
+            <div class="handle">@kisha</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content chat-layout">
+
+    <!-- Contacts panel -->
+    <div class="chat-sidebar" id="chatSidebar">
+      <div class="chat-sidebar-header">
+        <h2>Messages</h2>
+        <button class="icon-btn" id="newChatBtn" title="New message"><i class="fa-solid fa-pen-to-square"></i></button>
+      </div>
+      <div class="chat-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search conversations..." id="chatSearch">
+      </div>
+      <ul class="contact-list" id="contactList">
+
+        <li class="contact-item active" data-user="mer" data-name="Mer" data-initials="Me" data-handle="@mer">
+          <div class="avatar">Me</div>
+          <div class="contact-info">
+            <div class="contact-name">Mer</div>
+            <div class="contact-preview">That sounds amazing! When are you going?</div>
+          </div>
+          <div class="contact-meta">
+            <div class="contact-time">2h</div>
+            <div class="unread-dot"></div>
+          </div>
+        </li>
+
+        <li class="contact-item" data-user="aiz" data-name="Aiz" data-initials="Ai" data-handle="@aiz">
+          <div class="avatar">Ai</div>
+          <div class="contact-info">
+            <div class="contact-name">Aiz</div>
+            <div class="contact-preview">I just pushed the refactor, check it out!</div>
+          </div>
+          <div class="contact-meta">
+            <div class="contact-time">5h</div>
+          </div>
+        </li>
+
+        <li class="contact-item" data-user="janners" data-name="Janners" data-initials="Ja" data-handle="@janners">
+          <div class="avatar">Ja</div>
+          <div class="contact-info">
+            <div class="contact-name">Janners</div>
+            <div class="contact-preview">You have to try the ube pandesal recipe 😄</div>
+          </div>
+          <div class="contact-meta">
+            <div class="contact-time">1d</div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- Chat window -->
+    <div class="chat-window" id="chatWindow">
+
+      <!-- Header -->
+      <div class="chat-window-header" id="chatHeader">
+        <button class="icon-btn chat-back-btn" id="chatBackBtn"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="avatar" id="chatAvatar">Me</div>
+        <div class="chat-header-info">
+          <div class="chat-header-name" id="chatHeaderName">Mer</div>
+          <div class="chat-header-handle" id="chatHeaderHandle">@mer</div>
+        </div>
+        <div class="chat-header-actions">
+          <button class="icon-btn" title="View profile"><i class="fa-regular fa-user"></i></button>
+        </div>
+      </div>
+
+      <!-- Messages area -->
+      <div class="chat-messages" id="chatMessages">
+
+        <!-- Mer conversation (default) -->
+        <div class="msg-day-label">Today</div>
+
+        <div class="msg-bubble incoming" data-conv="mer">
+          <div class="msg-avatar avatar">Me</div>
+          <div class="msg-content">
+            <p>Hey Kisha! Loved your last post about slow living. So relatable 💜</p>
+            <span class="msg-time">10:14 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble outgoing" data-conv="mer">
+          <div class="msg-content">
+            <p>Aww thank you Mer! It really helps me slow down and enjoy the moment 🌿</p>
+            <span class="msg-time">10:17 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="mer">
+          <div class="msg-avatar avatar">Me</div>
+          <div class="msg-content">
+            <p>Are you planning any trips soon? I saw you mentioned the forest getaway idea on Explore!</p>
+            <span class="msg-time">10:20 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble outgoing" data-conv="mer">
+          <div class="msg-content">
+            <p>Yes! We're thinking of heading somewhere up north this weekend — totally off the grid 🌲</p>
+            <span class="msg-time">10:22 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="mer">
+          <div class="msg-avatar avatar">Me</div>
+          <div class="msg-content">
+            <p>That sounds amazing! When are you going?</p>
+            <span class="msg-time">10:23 AM</span>
+          </div>
+        </div>
+
+        <!-- Aiz conversation (hidden) -->
+        <div class="msg-day-label" data-conv="aiz" style="display:none;">Yesterday</div>
+
+        <div class="msg-bubble outgoing" data-conv="aiz" style="display:none;">
+          <div class="msg-content">
+            <p>Hey Aiz! I saw your post about design tokens — that's exactly what I needed to read today.</p>
+            <span class="msg-time">Yesterday 3:05 PM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="aiz" style="display:none;">
+          <div class="msg-avatar avatar">Ai</div>
+          <div class="msg-content">
+            <p>Haha right?! I spent way too long fighting with hardcoded colors before switching. Never going back 😅</p>
+            <span class="msg-time">Yesterday 3:10 PM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble outgoing" data-conv="aiz" style="display:none;">
+          <div class="msg-content">
+            <p>Do you use CSS custom properties or a preprocessor like Sass?</p>
+            <span class="msg-time">Yesterday 3:12 PM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="aiz" style="display:none;">
+          <div class="msg-avatar avatar">Ai</div>
+          <div class="msg-content">
+            <p>Pure CSS custom props. Simpler and native — no build step needed for the token layer.</p>
+            <span class="msg-time">Yesterday 3:15 PM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="aiz" style="display:none;">
+          <div class="msg-avatar avatar">Ai</div>
+          <div class="msg-content">
+            <p>I just pushed the refactor, check it out!</p>
+            <span class="msg-time">Yesterday 3:16 PM</span>
+          </div>
+        </div>
+
+        <!-- Janners conversation (hidden) -->
+        <div class="msg-day-label" data-conv="janners" style="display:none;">2 days ago</div>
+
+        <div class="msg-bubble incoming" data-conv="janners" style="display:none;">
+          <div class="msg-avatar avatar">Ja</div>
+          <div class="msg-content">
+            <p>Kisha! Did you see my post about ube cheese pandesal? 😄</p>
+            <span class="msg-time">2d 9:00 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble outgoing" data-conv="janners" style="display:none;">
+          <div class="msg-content">
+            <p>YES and now I'm starving 😂 Please share the recipe!</p>
+            <span class="msg-time">2d 9:05 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="janners" style="display:none;">
+          <div class="msg-avatar avatar">Ja</div>
+          <div class="msg-content">
+            <p>Haha I'll post the full recipe this week! Spoiler: it's easier than it looks.</p>
+            <span class="msg-time">2d 9:07 AM</span>
+          </div>
+        </div>
+
+        <div class="msg-bubble incoming" data-conv="janners" style="display:none;">
+          <div class="msg-avatar avatar">Ja</div>
+          <div class="msg-content">
+            <p>You have to try the ube pandesal recipe 😄</p>
+            <span class="msg-time">2d 9:08 AM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input area -->
+      <div class="chat-input-area">
+        <button class="icon-btn chat-attach-btn" title="Attach image"><i class="fa-solid fa-plus"></i></button>
+        <div class="chat-input-wrap">
+          <input type="text" id="chatInput" placeholder="Send a message…" autocomplete="off">
+        </div>
+        <button class="chat-send-btn" id="chatSendBtn" title="Send">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Empty state (shown on mobile before selecting a convo) -->
+    <div class="chat-empty" id="chatEmpty">
+      <div class="chat-empty-inner">
+        <div class="chat-empty-icon"><i class="fa-regular fa-paper-plane"></i></div>
+        <h3>Your Messages</h3>
+        <p>Send private messages to friends and share your thoughts.</p>
+        <button class="btn" id="startChatBtn">Start a Conversation</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<nav class="bottom-nav">
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="explore.html"><i class="fa-solid fa-compass"></i> Explore</a></li>
+    <li><a href="messages.html" class="active"><i class="fa-regular fa-paper-plane"></i> Messages</a></li>
+    <li><a href="notifications.html"><i class="fa-regular fa-bell"></i> Alerts</a></li>
+    <li><a href="profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+<script src="messages.js"></script>
+</body>
+</html>
